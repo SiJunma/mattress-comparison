@@ -515,39 +515,6 @@
         margin-bottom: 20px;
     }
 
-    .anchor-collapse {
-        cursor: default;
-
-        &__list {
-            display: flex;
-            flex-direction: row;
-            opacity: 1;
-            visibility: visible;
-            height: auto;
-            width: auto;
-            flex-grow: 1;
-            padding-left: 10px;
-        }
-
-        &__burger-btn {
-            display: none;
-        }
-
-        &__wrapper {
-            flex-direction: row;
-            max-width: 960px;
-            margin: 0 auto;
-        }
-
-        &__item {
-            padding: 0 10px;
-        }
-
-        &__link {
-            margin-left: auto;
-        }
-    }
-
     .pros .btn {
         max-width: 341px;
         margin: 0 auto;
@@ -609,7 +576,41 @@
 
 @media (min-width: 1200px) {
     .anchor-collapse {
-        top: 0;
+        cursor: default;
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+            width: auto;
+            flex-grow: 1;
+            padding-left: 10px;
+        }
+
+        &__burger-btn {
+            display: none;
+        }
+
+        &__wrapper {
+            flex-direction: row;
+            max-width: 960px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            padding: 0 10px;
+        }
+
+        &__link {
+            margin-left: auto;
+        }
+    }
+    
+    .anchor-collapse {
+        top: -1px;
         border-top: $borderGrey;
 
         &__wrapper {

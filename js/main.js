@@ -27,8 +27,8 @@ anchors.forEach(trigger => {
 
       if(hash.length > 2) {
         let target = document.querySelector(hash);
-        let headerOffset = 150;
-        if(sizes()['windowWidth'] <= 992 && sizes()['pageWidth'] <= 992) {
+        let headerOffset = 80;
+        if(sizes()['windowWidth'] <= 1200 && sizes()['pageWidth'] <= 1200) {
           headerOffset = 400;
         }
         let elementPosition = getOffsetTop(target);
@@ -179,7 +179,7 @@ function sizes() {
 let reviewBtn = document.querySelector('#anchorCollapse');
 if(reviewBtn) {
   reviewBtn.addEventListener('click', (evt) => {
-    if(sizes()['windowWidth'] <= 992 && sizes()['pageWidth'] <= 992) {
+    if(sizes()['windowWidth'] <= 1200 && sizes()['pageWidth'] <= 1200) {
       reviewBtn.classList.toggle('open');
     }
   })
