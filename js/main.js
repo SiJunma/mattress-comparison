@@ -97,12 +97,55 @@ if(document.querySelector('.cards-slider__list_short')) {
     
     new Splide( el, {
       type   : 'slide',
-      drag   : 'free',
-      perPage: 2,
+      drag   : true,
+      gap: '10px',
+      perPage: 1,
+      fixedWidth: false,
       pagination: false,
+      mediaQuery: 'min',
+
+      breakpoints: {
+        768: {
+          fixedWidth: '295px',
+          perPage: 2,
+          gap: '0px'
+        },
+
+        992: {
+          fixedWidth: '330px',
+          perPage: 2,
+          gap: '0',
+        },
+
+        1400: {
+          fixedWidth: false,
+          perPage: 3,
+          gap: '0px',
+        }
+      }
     } ).mount();
 
   });
+}
 
+function sizes() {
+  let contentWidth = [...document.body.children].reduce( 
+    (a, el) => Math.max(a, el.getBoundingClientRect().right), 0) 
+    - document.body.getBoundingClientRect().x;
+
+  return {
+    windowWidth:  document.documentElement.clientWidth,
+    pageWidth:    Math.min(document.body.scrollWidth, contentWidth)
+  }
+}
+
+// expert review toggle menu
+let reviewBtn = document.querySelector('#anchorCollapse');
+if(reviewBtn) {
+  reviewBtn.addEventListener('click', (evt) => {
+    if(sizes()['windowWidth'] <= 992 && sizes()['pageWidth'] <= 992) {
+      reviewBtn.classList.toggle('open');
+    }
+  })
 }
 
