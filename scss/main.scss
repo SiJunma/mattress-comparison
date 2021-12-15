@@ -385,7 +385,7 @@ h6 {
 
 .logo {
     font-size: 0;
-    height: 30px;
+    height: 11px;
 
     img {
         width: 100%;
@@ -1260,6 +1260,10 @@ h6 {
 
 
 @media (min-width: 375px) {
+    .logo {
+        height: 13px;
+    }
+
     .btn-primary {
         padding: 0 19px;
     }
