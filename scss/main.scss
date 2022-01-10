@@ -195,7 +195,7 @@ h6 {
     box-shadow: 0px 9px 21px rgba(85, 85, 85, 0.14);
 
     position: sticky;
-    top: 42px;
+    top: 27px;
     z-index: 10;
     cursor: pointer;
 
@@ -672,7 +672,7 @@ h6 {
     box-shadow: 0px 9px 21px rgba(85, 85, 85, 0.14);
 
     position: sticky;
-    top: 42px;
+    top: 27px;
     z-index: 10;
 
     &__list {
@@ -1423,3 +1423,8 @@ h6 {
         height: 307px;
     }
 }
+
+
+@import "modalStyles.scss";
+@import "popupMain1.scss";
+@import "popupSpecial1.scss";

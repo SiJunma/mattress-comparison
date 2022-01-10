@@ -4,7 +4,7 @@
 @media (min-width: 576px) {
     .body_main {
         background-image: url('../img/main-bg.webp');
-        background-position: top 160px center;
+        background-position: top 130px center;
     }
 
     .body_review {
@@ -17,7 +17,7 @@
     }
 
     .anchor-collapse {
-        top: 59px;
+        top: 41px;
     }
 
     .main-cards {
@@ -38,7 +38,7 @@
     }
 
     .category-slider {
-        top: 59px;
+        top: 41px;
     }
 
     .header {
@@ -312,7 +312,7 @@
       grid-auto-columns: 1fr 1fr 1fr 1fr 1fr; 
         grid-auto-rows: 1fr; 
         grid-template-columns: 260px auto; 
-        grid-template-rows: auto auto; 
+        grid-template-rows: auto; 
         gap: 0px 0px; 
         grid-template-areas: 
             "image title"

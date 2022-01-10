@@ -42,3 +42,10 @@ $borderGrey: 1px solid #E9E9E9;
         position: absolute;
     }
 }
+
+@mixin no-p() {
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}

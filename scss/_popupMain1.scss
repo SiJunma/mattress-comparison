@@ -1,0 +1,213 @@
+@import "variables.scss";
+// Modal-1 styles START
+#mainModal1 {
+    .popup {
+        &__img {
+            width: 100%;
+            height: 261px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+    
+                object-position: top;
+            }
+        }
+    
+        &__col {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+    
+            &:first-child {
+                .popup__content {
+                    background: linear-gradient(180deg, #BFB9B3 0%, #E7D5C4 100%);
+                }
+    
+                .popup__text-big {
+                    color: #2C3C99;
+                }
+    
+                .popup__text-small {
+                    color: #000000;
+                }
+    
+                .btn.btn-primary {
+                    background: linear-gradient(0deg, #0075CE, #0075CE);
+                    box-shadow: 0px 6px 7px rgba(12, 45, 95, 0.12);
+                    border-radius: 3px;
+                }
+            }
+    
+            &:last-child {
+                .popup__content {
+                    background: linear-gradient(180deg, #505868 0%, #30313C 100%), #C4C4C4;
+                }
+    
+                .popup__text-big {
+                    color: #FFD600;
+                }
+    
+                .popup__text-small {
+                    color: #FFFFFF;
+                }
+    
+                .btn.btn-primary {
+                    background: linear-gradient(0deg, #001780, #001780);
+                    box-shadow: 0px 6px 7px rgba(12, 45, 95, 0.12);
+                    border-radius: 3px;
+                }
+            }
+    
+            @include no-p();
+        }
+    
+        &__content {
+            padding-top: 27px;
+            flex-grow: 1;
+        }
+    
+        &__text-big {
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 43px;
+            text-transform: uppercase;
+            padding-left: 25px;
+            padding-right: 25px;
+    
+            @include no-p();
+        }
+    
+        &__text-small {
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 27px;
+            padding-left: 25px;
+            padding-right: 25px;
+    
+            @include no-p();
+        }
+    
+        &__cta-box {
+            margin-top: auto;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .btn.btn-primary {
+                height: 45px;
+                font-size: 19px;
+                max-width: 204px;
+                margin-bottom: 15px;
+            }
+    
+            .link {
+                font-size: 17px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 983px) {
+
+        .popup__text-big {
+            font-size: 28px;
+            line-height: 31px;
+            margin-bottom: 5px;
+        }
+    
+        .popup__text-small {
+            font-size: 19px;
+            line-height: 20px;
+        }
+    
+        .popup__img {
+            width: 100%;
+            height: 190px;
+        }
+    
+        .popup__content {
+            padding-top: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 685px) {
+        .popup__img {
+            height: 140px;
+        }
+    
+        .popup__cta-box {
+            padding-top: 15px;
+            padding-bottom: 20px;
+    
+            .btn.btn-primary {
+                height: 35px;
+                font-size: 15px;
+    
+                margin-bottom: 8px;
+            }
+    
+            .link {
+                font-size: 15px;
+    
+                &.link-double-arrow::after {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    
+        .popup__text-big {
+            font-size: 19px;
+            line-height: 25px;
+        }
+    
+        .popup__text-small {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    
+        .popup__text-big,
+        .popup__text-small,
+        .popup__cta-box {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+    }
+    
+    @media screen and (max-width: 375px) {
+        .popup__img {
+            height: 115px;
+        }
+    
+        .popup__text-big {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    
+        .popup__cta-box {
+            padding-top: 10px;
+    
+            .btn.btn-primary {
+                height: 35px;
+                font-size: 13px;
+            }
+    
+            .btn-primary span::after {
+                width: 11px;
+                height: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+// Modal-1 styles END
